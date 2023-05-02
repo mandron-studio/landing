@@ -1,0 +1,44 @@
+body {
+  background-color: #d2d7d7;
+  padding: 3vw;
+  width: 90vw;
+  height: 100vh;
+  font-size: 100%;
+  /*line-height: 450%;*/
+  /*text-align: left;*/
+  cursor: none;
+}
+
+@font-face {
+  font-family: SpaceGrotesk;
+  src: url("./font/SpaceGrotesk-Medium.otf");
+  font-style: normal;
+}
+
+a {
+  font-family: "SpaceGrotesk";
+  /*line-height: 50%;*/
+  font-size: clamp(0.5rem, 5vw, 1.4rem);
+  font-size: 8vw;
+  line-height: 100%;
+  color: #0a0f14;
+  /*margin-inline: 2px;*/
+  text-decoration-line: none;
+  transform-origin: 0% 0%;
+  transition: transform 0.3s;
+  cursor: none;
+}
+
+.active {
+  transform: translateX(var(--foo));
+}
+
+a:hover {
+  color: #00ff00;
+}
+
+ul.no-bullets {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}

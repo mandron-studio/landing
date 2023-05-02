@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>mandron.studio</title>
+    <!-- <link rel="stylesheet" href="animation.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div>
+      <ul class="no-bullets">
+        <li><a href="./01-mandron.studio/mandron.html">mandron.studio</a></li>
+        <li><a href="./02-thinks/thinks.html">thinks</a></li>
+        <li><a href="./03-designs/designs.html">designs</a></li>
+        <li><a href="./04-generates/generates.html">generates</a></li>
+        <li><a href="./05-connects/connects.html">connects</a></li>
+        <li><a href="mailto:create@mandron.studio">create@mandron.studio</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const myLis = document.querySelectorAll("li");
+      for (const li of myLis) {
+        li.setAttribute("style", `--foo: ${Math.random() * 380}px`);
+      }
+
+      setInterval(() => {
+        for (const li of myLis) {
+          li.classList.toggle("active");
+        }
+      }, 800);
+    </script>
+  </body>
+</html>

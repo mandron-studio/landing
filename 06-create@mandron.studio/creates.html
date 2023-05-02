@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="transition.css"> -->
+    <link rel="stylesheet" href="transition.css" />
+    <!-- <link rel="stylesheet" href="animation.css" /> -->
+  </head>
+
+  <body>
+
+    <div>
+        <a href="./01-logo/01.html">01</a>
+    </div>
+
+   <ul>
+      <li>Lorem, ipsum dolor.</li>
+      <li>Ea, at accusamus!</li>
+      <li>Et, eum amet.</li>
+      <li>Ullam, distinctio debitis.</li>
+      <li>Commodi, saepe! Reprehenderit.</li>
+    </ul>
+
+    <script>
+      const myLis = document.querySelectorAll("li");
+      for (const li of myLis) {
+        li.setAttribute("style", `--foo: ${Math.random() * 360}px`);
+      }
+
+      setInterval(() => {
+        for (const li of myLis) {
+          li.classList.toggle("active");
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
