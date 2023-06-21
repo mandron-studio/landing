@@ -6,7 +6,7 @@ body {
   font-size: 100%;
   /*line-height: 450%;*/
   /*text-align: left;*/
-  cursor: none;
+  cursor: pointer;
 }
 
 @font-face {
@@ -26,7 +26,7 @@ a {
   text-decoration-line: none;
   transform-origin: 0% 0%;
   transition: transform 0.3s;
-  cursor: none;
+  cursor: pointer;
 }
 
 .active {
